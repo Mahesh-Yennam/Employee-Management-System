@@ -1,0 +1,34 @@
+<%- include('layout/top'); -%>
+
+
+  <form action="/savedetails" method="post">
+    <table>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <h2>Employee Information</h2>
+        </td>
+      </tr>
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" name="name" required></td>
+      </tr>
+      <tr>
+        <td>Contact:</td>
+        <td><input type="number" name="contact" required></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td>Salary:</td>
+        <td><input type="number" name="salary" required></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;"><input type="submit" value="Submit" class="sub"></td>
+      </tr>
+    </table>
+
+  </form>
+
+  <%- include('layout/bottom'); -%>

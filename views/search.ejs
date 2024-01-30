@@ -1,0 +1,28 @@
+<%- include('layout/top'); -%>
+
+
+  <form action="/searchrecord" method="post">
+    <table>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <h2>Search Employee</h2>
+        </td>
+      </tr>
+      <tr>
+        <td>Employee Name</td>
+        <td><input type="text" name="name" required></td>
+      </tr>
+      <% if (msg) { %>
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <%= msg%>
+          </td>
+        </tr>
+        <% } %>
+          <tr>
+            <td colspan="2" style="text-align: center;"><input type="submit" value="Submit"></td>
+          </tr>
+    </table>
+  </form>
+
+  <%- include('layout/bottom'); -%>

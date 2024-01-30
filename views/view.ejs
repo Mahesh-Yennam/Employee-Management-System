@@ -1,0 +1,43 @@
+<%- include('layout/top'); -%>
+
+
+  <form>
+    <table>
+      <tr>
+        <td colspan="5" style="text-align: center;">
+          <h2>Employee Information</h2>
+        </td>
+      </tr>
+      <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Contact</td>
+        <td>Email</td>
+        <td>Salary</td>
+      </tr>
+
+      <% emp.forEach(e=> { %>
+
+        <tr>
+          <td>
+            <%= e.id %>
+          </td>
+          <td>
+            <%= e.name %>
+          </td>
+          <td>
+            <%= e.contact %>
+          </td>
+          <td>
+            <%= e.email %>
+          </td>
+          <td>
+            <%= e.salary %>
+          </td>
+        </tr>
+
+        <% }) %>
+    </table>
+  </form>
+
+  <%- include('layout/bottom'); -%>

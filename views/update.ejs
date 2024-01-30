@@ -1,0 +1,21 @@
+<%- include('layout/top'); -%>
+
+
+  <form action="/updaterecord" method="post">
+    <table>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <h2>Update Employee</h2>
+        </td>
+      </tr>
+      <tr>
+        <td>Employee Id</td>
+        <td><input type="number" name="id" required></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;"><input type="submit" value="Submit"></td>
+      </tr>
+    </table>
+  </form>
+
+  <%- include('layout/bottom'); -%>

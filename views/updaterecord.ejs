@@ -1,0 +1,45 @@
+<%- include('layout/top'); -%>
+
+
+  <% if(!msg) {%>
+    <form action="/updatesuccess/<%=emp.id%>" method="post">
+      <table>
+
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <h2>Employee Information</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>Id</td>
+          <td><input type="number" name="id" value=<%=emp.id %> disabled></td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td><input type="text" name="name" value=<%=emp.name %>></td>
+        </tr>
+        <tr>
+          <td>Contact</td>
+          <td><input type="number" name="contact" value=<%=emp.contact %>></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input type="email" name="email" value=<%=emp.email %>></td>
+        </tr>
+        <tr>
+          <td>Salary</td>
+          <td><input type="number" name="salary" value=<%=emp.salary %>></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center;"><input type="submit" value="Submit"></td>
+        </tr>
+      </table>
+    </form>
+    <% } else {%>
+      <h1 style="padding-top: 100px;">
+        <%= msg %>
+      </h1>
+      <h2><a href="/view">View Employees</a></h2>
+      <% } %>
+
+        <%- include('layout/bottom'); -%>

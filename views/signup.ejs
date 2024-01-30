@@ -1,0 +1,39 @@
+<%- include('layout/top'); -%>
+
+
+  <form method="post" action="/signup_success">
+    <table>
+      <tr>
+        <td colspan="2" style="text-align: center">
+          <h2>SignUp</h2>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" name="name" required /></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email" required /></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" name="pass" required /></td>
+      </tr>
+      <% if(msg) { %>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <%= msg %>
+          </td>
+        </tr>
+        <% } %>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <input type="submit" value="Submit" />
+            </td>
+          </tr>
+    </table>
+  </form>
+
+  <%- include('layout/bottom'); -%>
