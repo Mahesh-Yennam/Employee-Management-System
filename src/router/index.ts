@@ -7,11 +7,11 @@ let _email: Email;
 let _msg: Msg;
 
 let _admin: Admin[] = [
-  { name: "mahesh", email: "m@gmail.com", password: "123" },
+  { name: "mahesh", email: "mahesh@gmail.com", password: "123456" },
 ];
 
 let _employee: Employee[] = [
-  { id: 1, name: "mahesh", contact: 1213, email: "m@gmail.com", salary: 50000 },
+  { id: 1, name: "pqr", contact: 1213, email: "pqr@gmail.com", salary: 20000 },
 ];
 
 router.get("/", (req, res) => {
